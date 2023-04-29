@@ -1,7 +1,4 @@
 'use strict'
-const totalAmountSum = +prompt("Введите сумму");
-const quantyGoodsCart = +prompt("Введите количество товаров");
-const promoCode = prompt("Введите промокод");
 
 const calculate = (totalAmountSum, quantyGoodsCart, promoCode) => {  
     let sum = totalAmountSum;
@@ -23,5 +20,7 @@ const calculate = (totalAmountSum, quantyGoodsCart, promoCode) => {
         return  sum;
     
 };
-
-    alert(calculate(`Ваша итоговая сумма: ${totalAmountSum}, ${quantyGoodsCart}, ${promoCode}`));
+const totalAmountSum = +prompt("Введите сумму");
+const quantyGoodsCart = +prompt("Введите количество товаров");
+const promoCode = prompt("Введите промокод");
+    alert("Ваша итоговая сумма: " + calculate(totalAmountSum, quantyGoodsCart, promoCode));
